@@ -25,14 +25,33 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.amberAccent,
+        backgroundColor: Colors.amber,
         title: Text("Homepage"),
-        actions: [
-          Icon(Icons.person),
-          SizedBox(width: 20),
-          Icon(Icons.account_balance),
-          SizedBox(width: 20),
-        ],
+        actions: [Icon(Icons.person), SizedBox(width: 15)],
+      ),
+      body: Container(
+        // color: Colors.blue,
+        // height: 100,
+        // width: 100,
+        // alignment: Alignment.center,
+        // child: Row(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   children: [
+        //     Icon(Icons.person),
+        //     SizedBox(width: 15),
+        //     Icon(Icons.person_2),
+        //     SizedBox(width: 15),
+        //   ],
+        // ),
+        decoration: BoxDecoration(
+          // color: Colors.blue,
+          // borderRadius: BorderRadius.circular(20),
+          gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors: [Colors.amber, Colors.red],
+          ),
+        ),
       ),
     );
   }
