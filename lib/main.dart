@@ -10,7 +10,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "Latihan Container",
       debugShowCheckedModeBanner: false,
+      home: HomePage();
     );
+  }
+}
+
+//membuat page HomePage menggunakan stateless
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
