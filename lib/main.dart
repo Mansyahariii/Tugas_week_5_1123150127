@@ -33,7 +33,8 @@ class HomePage extends StatelessWidget {
         // color: Colors.blue,
         // height: 100,
         // width: 100,
-        // alignment: Alignment.center,
+        margin: EdgeInsets.all(20),
+        alignment: Alignment.center,
         // child: Row(
         //   mainAxisAlignment: MainAxisAlignment.center,
         //   children: [
@@ -45,13 +46,14 @@ class HomePage extends StatelessWidget {
         // ),
         decoration: BoxDecoration(
           // color: Colors.blue,
-          // borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(20),
           gradient: LinearGradient(
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
             colors: [Colors.amber, Colors.red],
           ),
         ),
+        child: Text("ini text didalam box decoration"),
       ),
     );
   }
