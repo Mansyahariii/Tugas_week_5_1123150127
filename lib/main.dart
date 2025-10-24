@@ -27,6 +27,12 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.amberAccent,
         title: Text("Homepage"),
+        actions: [
+          Icon(Icons.person),
+          SizedBox(width: 20),
+          Icon(Icons.account_balance),
+          SizedBox(width: 20),
+        ],
       ),
     );
   }
